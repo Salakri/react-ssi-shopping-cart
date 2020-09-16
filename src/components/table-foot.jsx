@@ -1,9 +1,16 @@
 import React, { Component } from "react";
-import "../App.css";
 
 class TableFoot extends Component {
   state = {};
   render() {
+    let currItems = this.props.items;
+
+    let totalPrice = 0;
+    for (let i = 0; i < currItems.length; i++) {
+      totalPrice += currItems[i].selectedQuantity * currItems[i].unitPrice;
+    }
+    totalPrice = parseFloat(totalPrice.toPrecision(12));
+
     return (
       <tfoot>
         <tr>
@@ -11,20 +18,17 @@ class TableFoot extends Component {
           <td className="hide-xs"></td>
           <td className="hide-xs"></td>
           <td>
-            total: $<span className="total">205.12</span>
+            total: $<span className="total">{totalPrice}</span>
           </td>
           <td className="hide-xs"></td>
         </tr>
         <tr>
           <th>
             <button className="btn btn-warning" type="button">
-              <span className="badge">
-                <i className="mr-2 pg-arrow_left_line_alt"></i>
-              </span>
               Continue Shopping
             </button>
           </th>
-          <td className="hide-xs" scope="row"></td>
+          <td className="hide-xs"></td>
           <td className="hide-xs"></td>
           <td className="hide-xs"></td>
           <td>
@@ -35,9 +39,6 @@ class TableFoot extends Component {
               data-target="#checkOutBox"
             >
               CheckOut
-              <span className="badge">
-                <i className="ml-2 pg-arrow_lright_line_alt"></i>
-              </span>
             </button>
           </td>
         </tr>

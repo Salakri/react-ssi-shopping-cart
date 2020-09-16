@@ -5,10 +5,14 @@ import Form from "./components/form";
 
 function App() {
   return (
-    <React.Fragment>
-      <Table />
-      <Form />
-    </React.Fragment>
+    <div>
+      <div className="container">
+        <Table />
+      </div>
+      <div>
+        <Form />
+      </div>
+    </div>
   );
 }
 

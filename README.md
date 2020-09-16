@@ -17,9 +17,9 @@
 
 ---
 
-- [ ] Table head: Product, Discount, Quantity, Price Action
-- [ ] Table body: shopping lists with details and summation price
-- [ ] Item deletable
-- [ ] Item has inventory
+- [x] Table head: Product, Discount, Quantity, Price Action
+- [x] Table body: shopping lists with details and summation price
+- [x] Item deletable
+- [x] Item has inventory
 - [ ] Table foot: continue shopping(dummy), Checkout(a modual layer)
 - [ ] Form validation (see the demo)

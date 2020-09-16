@@ -1,17 +1,19 @@
 import React, { Component } from "react";
-import "../App.css";
 
 class TableHead extends Component {
-  state = {};
+  state = {
+    headName: ["Product", "Discount", "Quantity", "Price", "Action"],
+  };
+
   render() {
     return (
       <thead>
         <tr>
-          <th scope="col">Product</th>
-          <th scope="col">Discount</th>
-          <th scope="col">Quantity</th>
-          <th scope="col">Price</th>
-          <th scope="col">Action</th>
+          {this.state.headName.map((headers, id) => (
+            <th scope="col" key={id}>
+              {headers}
+            </th>
+          ))}
         </tr>
       </thead>
     );
