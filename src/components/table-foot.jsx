@@ -37,6 +37,7 @@ class TableFoot extends Component {
               type="button"
               data-toggle="modal"
               data-target="#checkOutBox"
+              onClick={() => this.props.onCheckout(currItems, totalPrice)}
             >
               CheckOut
             </button>

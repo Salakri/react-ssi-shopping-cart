@@ -12,6 +12,7 @@
 - [ ] Webpack for automation (manually) (optional)
 - [x] Bootstrap for the layout decoration
 - [x] Using React Class components and Child components
+- [x] Using Hooks (partial)
 
 ### Modules
 
@@ -21,5 +22,5 @@
 - [x] Table body: shopping lists with details and summation price
 - [x] Item deletable
 - [x] Item has inventory
-- [ ] Table foot: continue shopping(dummy), Checkout(a modual layer)
-- [ ] Form validation (see the demo)
+- [x] Table foot: continue shopping(dummy), Checkout(a modual layer)
+- [x] Form validation
